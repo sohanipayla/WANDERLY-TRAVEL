@@ -1,0 +1,1 @@
+html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,sans-serif}.hero{background:linear-gradient(120deg,rgba(15,23,42,.9),rgba(15,23,42,.25)),url('../images/banners/hero.jpg');background-size:cover;background-position:center}.card-hover{transition:.25s}.card-hover:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(15,23,42,.12)}

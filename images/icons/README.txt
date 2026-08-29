@@ -1,0 +1,1 @@
+Put flight.png, hotel.png, tour.png and destination.png here.

@@ -1,0 +1,6 @@
+document.addEventListener('DOMContentLoaded',()=>{
+const grid=document.querySelector('#grid'),search=document.querySelector('#search'),country=document.querySelector('#country'),price=document.querySelector('#price'),pv=document.querySelector('#priceValue');
+function render(){const q=search.value.toLowerCase(),c=country.value,max=+price.value;
+const list=destinations.filter(d=>(d.name.toLowerCase().includes(q)||d.country.toLowerCase().includes(q))&&(c==='all'||d.country===c)&&d.price<=max);
+pv.textContent=max;grid.innerHTML=list.map(d=>`<article class="bg-white rounded-3xl overflow-hidden shadow-sm card-hover"><img src="${d.image}" class="w-full h-64 object-cover" alt="${d.name}"><div class="p-5"><p class="text-sm text-slate-500">${d.country}</p><h3 class="text-2xl font-bold">${d.name}</h3><p class="text-slate-600 mt-2">${d.description}</p><div class="flex justify-between items-center mt-5"><b>From $${d.price}</b><a href="destination-details.html?id=${d.id}" class="bg-slate-900 text-white px-4 py-2 rounded-xl">Explore</a></div></div></article>`).join('')||'<p>No destinations found.</p>'}
+[search,country,price].forEach(x=>x.addEventListener('input',render));render();});

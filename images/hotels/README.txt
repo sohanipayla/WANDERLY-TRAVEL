@@ -1,0 +1,1 @@
+Put hotel-1.jpg through hotel-6.jpg here.

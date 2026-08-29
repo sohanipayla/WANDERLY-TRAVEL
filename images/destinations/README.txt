@@ -1,0 +1,1 @@
+Put the 8 destination JPG files here using the filenames in data.js.

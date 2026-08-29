@@ -1,0 +1,1 @@
+Put hero.jpg, travel-banner.jpg and booking-banner.jpg here.
